@@ -10,7 +10,7 @@
     * Ada 4 method yaitu tampilBarang(), tambahStok(n: int), kurangiStok(n: int),
 hitungHargaTotal(jumlah: int). pada baris 16, 23, 27, dan 31.
 5. Perhatikan method kurangiStok() yang ada di class Barang, modifikasi isi method tersebut sehingga proses pengurangan hanya dilakukan jika stok masih ada (masih lebih besar dari 0)
-* 
+    * <img src="./ss/no_5.jpeg">
 6. Menurut Anda, mengapa method tambahStok() dibuat dengan memiliki 1 parameter berupa bilangan
 int?
     * Int n sesuai dengan nilai n oleh karena itu, metode tersebut menambahkan nilai n dan

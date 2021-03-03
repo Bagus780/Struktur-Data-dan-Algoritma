@@ -1,13 +1,19 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- *
- * @author ASUS
- */
 public class kubus {
+     public double sisi;
+    double r;
     
+    public kubus(double s){
+        sisi = s;
+    }
+    
+    double volume(){
+        double volum = sisi*sisi*sisi;
+        return volum;
+    }
+    
+    double luasAlas(){
+        double luasAlas = 6*sisi*sisi;
+        return luasAlas;
+    }
 }
+
