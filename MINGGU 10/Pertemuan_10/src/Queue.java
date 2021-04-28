@@ -110,4 +110,32 @@ public class Queue {
         return data;
     }
 
+    public void peekPosition(int data) {
+        int sudahKetemu = 0;
+        for (int i = 0; i <= max - 1; i++) {
+            if (Q[i] == data) {
+                System.out.println("Data Ditemukan pada Index ke-" + i);
+                sudahKetemu = 1;
+            }
+        }
+        if (sudahKetemu == 0) {
+            System.out.println("Data tidak ditemukan");
+        }
+    }
+
+    public void peekAt(int position) {
+        System.out.println("Posisi indeks ke-" + position + " adalah : " + Q[position]);
+    }
+
+    void Enqueue(Mahasiswa p) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    void peekRear() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    void peekPosition(String x) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
