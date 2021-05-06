@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Tugas4;
+package toha;
 
 /**
  *
@@ -171,7 +171,7 @@ public class DoubleLinkedList {
         } else {
             for (current = head; current.next != null; current = current.next) {
                 for (index = current.next; index != null; index = index.next) {
-                    if (current.data.ipk < index.data.ipk) {
+                    if (current.data.ipk > index.data.ipk) {
                         tmp = current.data.ipk;
                         current.data.ipk = index.data.ipk;
                         index.data.ipk = tmp;
@@ -198,4 +198,15 @@ public class DoubleLinkedList {
         }
     }
 
+    public void showfirst() {
+        Node4 current = head;
+        if (head == null) {
+            return;
+        } else {
+            if (head != null) {
+                System.out.println("| " + current.data.nim + "\t| " + current.data.nama + "\t| " + current.data.ipk + "\t|");
+            }
+            System.out.println("");
+        }
+    }
 }
